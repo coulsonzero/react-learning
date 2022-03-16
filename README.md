@@ -1,13 +1,14 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### 快速开始
+```sh
+npm install # OR yarn
+npm start   # OR yarn start
+```
 
-In the project directory, you can run:
-
-### `npm start`
 [http://localhost:3000](http://localhost:3000) to view it 
+
 ### `npm test`
 ### `npm run build`
 ### `npm run eject`
