@@ -1,11 +1,22 @@
 # React
 
+## 快速开始
+
+> 启动React项目
+
+```sh
+$ yarn
+$ yarn start
+```
+
 ## React快速入门
 
-* 创建一个新的React项目
+* 创建React项目
 
-```shell
-npx create-react-app react-app
+```sh
+$ npx create-react-app react-app
+$ cd react-app
+$ yarn start
 ```
 
 * React项目结构
