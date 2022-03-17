@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
 		<div>
-			<p>{counter}</p>
+			<p>{counter}</p>,
 			<button onClick={increment}>+</button>
 		</div>
 	);
