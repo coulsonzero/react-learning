@@ -1,13 +1,20 @@
 import React from 'react'
-import NavBar from './components/Navbar'
-import Header from './components/Header'
+
+import State from './components/State'
+// import Hooks from './components/Hooks'
+import ClassExample from './components/ClassExample'
+import FriendListItem from './components/FriendListItem'
+
+
 
 const App = () => {
   return (
-		<div>
-			<NavBar />
-			<Header />
-		</div>
+		<>
+			{/* <State /> */}
+			{/* <Hooks /> */}
+			{/* <ClassExample /> */}
+			<FriendListItem />
+		</>
 	);
 }
 
