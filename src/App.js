@@ -1,9 +1,9 @@
 import React from 'react'
 
-import State from './components/State'
+// import State from './components/State'
 // import Hooks from './components/Hooks'
-import ClassExample from './components/ClassExample'
-import FriendListItem from './components/FriendListItem'
+// import Clock from './components/Clock'
+import Toggle from './components/Toggle'
 
 
 
@@ -12,8 +12,8 @@ const App = () => {
 		<>
 			{/* <State /> */}
 			{/* <Hooks /> */}
-			{/* <ClassExample /> */}
-			<FriendListItem />
+			{/* <Clock /> */}
+			<Toggle />
 		</>
 	);
 }
