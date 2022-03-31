@@ -2,10 +2,13 @@ import React from 'react'
 import './tabBar.css'
 
 export default function TabBar() {
+    function handleClick(event) {
+        console.log(event.target.className)
+    }
   return (
     <>
         <menu className="menu">
-            <button className="menu__item active" >
+            <button className="menu__item active" onClick={handleClick}>
                 <svg className="icon" viewBox="0 0 24 24">
                     <path d="M3.8,6.6h16.4"/>
                     <path d="M20.2,12.1H3.8"/>
