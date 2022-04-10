@@ -1,21 +1,14 @@
-import React from 'react'
+import React from "react"
+import PropleList from "./components/PeopleList"
+import AddPeosonForm from "./components/AddPeosonForm"
 
-import State from './components/State'
-// import Hooks from './components/Hooks'
-import ClassExample from './components/ClassExample'
-import FriendListItem from './components/FriendListItem'
-
-
-
-const App = () => {
-  return (
+function App() {
+	return (
 		<>
-			{/* <State /> */}
-			{/* <Hooks /> */}
-			{/* <ClassExample /> */}
-			<FriendListItem />
+			<PropleList />
+			<AddPeosonForm />
 		</>
-	);
+	)
 }
 
 export default App
