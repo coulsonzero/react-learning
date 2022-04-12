@@ -1,17 +1,27 @@
+/**
+ * 跨组件通信：使用createContext， 解构成Provider传值, Consumer接受值
+ */
+
 import React, {createContext, Component} from "react"
 
 const {Provider, Consumer} = createContext()
 
 function ComA() {
-	return <ComB />
+	return (
+        <>
+            <div>ComA</div>
+            <ComB />
+        </>
+    )
 }
 
 function ComB() {
 	return (
-        <Consumer>
-            {(value) => <div>{value}</div>}
-        </Consumer>
-    )
+		<div style={{color: 'red', display: 'flex', flexDirection: 'row'}}>
+			<span>ComB: </span>
+			<Consumer>{(value) => <div>{value}</div>}</Consumer>
+		</div>
+	)
 }
 
 class CrossComponent extends Component {
