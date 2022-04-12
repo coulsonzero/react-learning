@@ -1,3 +1,7 @@
+/**
+ * 子传父：通过调用props回调函数传递参数到父组件
+ */
+
 import React, {useState, Component} from "react"
 
 function ChildFuncFunc(props) {

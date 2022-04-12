@@ -1,3 +1,7 @@
+/**
+ * 父传子：通过props向子组件传递数组
+ */
+
 import React, {Component} from "react"
 
 function ChildFuncList(props) {
@@ -21,7 +25,6 @@ class ChildClassList extends Component {
 		return <ul>{this.list}</ul>
 	}
 }
-
 
 export class PropsList extends Component {
 	state = {

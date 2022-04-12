@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PropsFunc from './components/PropsFunc'
+import PropsBrother from './components/PropsBrother'
 
 export default function App() {
   return (
     <>
-      <PropsFunc />
+      <PropsBrother />
     </>
   )
 }

@@ -1,3 +1,6 @@
+/**
+ * 父传子：通过props向子组件传递对象
+ */
 import React, {Component} from "react"
 
 function ChildFuncObejct(props) {
