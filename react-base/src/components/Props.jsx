@@ -7,11 +7,11 @@ import React, {Component} from "react"
  * (数字、字符串、布尔值、数组、对象、函数、JSX模版)
  */
 
-function SonFunProps(props) {
+function ChildFunProps(props) {
 	return <div>{props.msg}</div>
 }
 
-export class SonClassProps extends Component {
+export class ChildClassProps extends Component {
 	render() {
 		return <div>{this.props.msg}</div>
 	}
@@ -25,8 +25,8 @@ export class Props extends Component {
 	render() {
 		return (
 			<>
-				<SonClassProps msg={this.state.msg} />
-				<SonFunProps msg={this.state.msg} />
+				<ChildClassProps msg={this.state.msg} />
+				<ChildFunProps msg={this.state.msg} />
 			</>
 		)
 	}
