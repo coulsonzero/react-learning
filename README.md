@@ -2,12 +2,13 @@
 
 
 ### 快速开始
+
 ```sh
 npm install # OR yarn
 npm start   # OR yarn start
 ```
 
-[http://localhost:3000](http://localhost:3000) to view it 
+[http://localhost:3000](http://localhost:3000) to view it
 
 ### `npm test`
 ### `npm run build`
