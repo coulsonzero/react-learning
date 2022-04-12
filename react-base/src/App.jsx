@@ -1,11 +1,11 @@
 import React from 'react'
 
-import PropsBrother from './components/PropsBrother'
+import CrossComponent from './components/CrossComponent'
 
 export default function App() {
   return (
     <>
-      <PropsBrother />
+      <CrossComponent />
     </>
   )
 }
