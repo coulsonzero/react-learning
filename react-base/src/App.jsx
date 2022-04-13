@@ -1,11 +1,12 @@
 import React from "react"
 
-import ReactLifecycle from "./components/ReactLifecycle"
+
+import AntdButton from "./components/AntdButton"
 
 export default function App() {
 	return (
 		<>
-			<ReactLifecycle />
+			<AntdButton />
 		</>
 	)
 }

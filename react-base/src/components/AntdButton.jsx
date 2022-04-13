@@ -1,12 +1,20 @@
-import React from 'react'
+import React from "react"
 import { Button } from "antd"
+import './AntdButton.css'
 
 class AntdButton extends React.Component {
-  render() {
-    return (
-      <div>AntdButton</div>
-    )
-  }
+	render() {
+		return (
+			<>
+				<Button type="primary">Primary Button</Button>
+				<Button>Default Button</Button>
+				<Button type="dashed">Dashed Button</Button>
+				<br />
+				<Button type="text">Text Button</Button>
+				<Button type="link">Link Button</Button>
+			</>
+		)
+	}
 }
 
 export default AntdButton
