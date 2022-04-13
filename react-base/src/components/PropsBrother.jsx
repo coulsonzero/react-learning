@@ -1,5 +1,5 @@
 /**
- * 兄弟组件通信
+ * 兄弟组件通信: 通过子传父，再父传子的方法实现
  */
 
 import React, {useState, Component} from "react"

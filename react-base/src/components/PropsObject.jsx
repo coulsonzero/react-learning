@@ -28,6 +28,7 @@ class ChildClassObject extends Component {
 				<div className="expense">
 					<div className="expense__title">name: {expense.name}</div>
 					<div className="expense__price">price: ${expense.price}</div>
+					<button>删除</button>
 				</div>
 			)
 		})

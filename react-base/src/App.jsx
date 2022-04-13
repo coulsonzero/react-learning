@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react"
 
-import CrossComponent from './components/CrossComponent'
+import PropsTypeList from "./components/PropsTypeList"
 
 export default function App() {
-  return (
-    <>
-      <CrossComponent />
-    </>
-  )
+	return (
+		<>
+			<PropsTypeList />
+		</>
+	)
 }
