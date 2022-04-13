@@ -1,11 +1,11 @@
 import React from "react"
 
-import PropsTypeList from "./components/PropsTypeList"
+import DefaultProps2 from "./components/DefaultProps2"
 
 export default function App() {
 	return (
 		<>
-			<PropsTypeList />
+			<DefaultProps2 />
 		</>
 	)
 }

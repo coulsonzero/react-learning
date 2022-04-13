@@ -9,7 +9,8 @@ const List = (props) => {
 
 // 校验方法
 List.propTypes = {
-    links: PropTypes.array
+    // links: PropTypes.array
+    links: PropTypes.array.isRequired //必须为数组类型
 }
 
 
