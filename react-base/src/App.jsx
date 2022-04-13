@@ -1,11 +1,11 @@
 import React from "react"
 
-import DefaultProps2 from "./components/DefaultProps2"
+import ReactLifecycle from "./components/ReactLifecycle"
 
 export default function App() {
 	return (
 		<>
-			<DefaultProps2 />
+			<ReactLifecycle />
 		</>
 	)
 }
