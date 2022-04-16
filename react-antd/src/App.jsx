@@ -1,12 +1,12 @@
 import React from "react"
 import './App.css'
-import AntdButton from "./components/AntdButton"
+import SearchInput from "./components/SearchInput"
 
 class App extends React.Component {
 	render() {
 		return (
 			<>
-				<AntdButton />
+				<SearchInput />
 			</>
 		)
 	}
