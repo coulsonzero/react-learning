@@ -5,7 +5,7 @@ const App = () => {
   return (
 		<>
 			<div>App</div>
-      <Outlet />
+      		<Outlet />
 		</>
 	)
 }
