@@ -1,8 +1,9 @@
 import React from "react"
 import { Button } from "antd"
-import './AntdButton.css'
+import 'antd/dist/antd.css'
 
 class AntdButton extends React.Component {
+	
 	render() {
 		return (
 			<>

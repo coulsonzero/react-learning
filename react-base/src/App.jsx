@@ -1,12 +1,12 @@
 import React from "react"
 
 
-import AntdButton from "./components/AntdButton"
+import SetState from "./components/SetState"
 
 export default function App() {
 	return (
 		<>
-			<AntdButton />
+			<SetState />
 		</>
 	)
 }
