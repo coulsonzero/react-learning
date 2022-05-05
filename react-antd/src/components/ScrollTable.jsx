@@ -1,6 +1,27 @@
 import React from "react"
 import {Card, Table, Tag} from "antd"
 
+/**
+ * author: coulsonzero
+ * date: 2022-04-29
+ * 功能: 数值千分位转换
+ * @param {String, Number} num
+ * @returns {String}
+ */
+function moneyFormat(num) {
+  if (num == null || num == undefined || (typeof num != 'number' && num != parseFloat(num))) {
+    return '-'
+  }
+  /*
+	let intStr = String(num).split(".")[0].replace(/(\d)(?=(?:\d{3})+$)/g, "$1,")
+	let decimalStr = String((Math.round(num * 100) / 100).toFixed(2)).split(".")[1]
+	return intStr + '.' + decimalStr
+  */
+
+  return parseFloat(num).toLocaleString("zh-CN", {style: "currency", currency: "CNY", minimumFractionDigits: "2"}).slice(1)
+}
+
+
 class ScrollTable extends React.Component {
 	constructor(props) {
 		super(props)
@@ -39,7 +60,8 @@ class ScrollTable extends React.Component {
 					align: "right",
 					width: 160,
 					render: (text, record) => {
-						return text == null ? "-" : <span>${parseFloat(text).toFixed(2)}</span>
+						// return text == null ? "-" : <span>${parseFloat(text).toFixed(2)}</span>
+						return text == null ? "-" : <span>${moneyFormat(text)}</span>
 					},
 				},
 				{
