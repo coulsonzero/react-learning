@@ -13,7 +13,7 @@
 	},
 	"scripts": {
 		"start": "node ../node_modules/.bin/react-scripts start ./src/index.js",
-		"build": "ode ../node_modules/.bin/react-scripts build ./src/index.js"
+		"build": "node ../node_modules/.bin/react-scripts build ./src/index.js"
 	},
 	"eslintConfig": {
 		"extends": [
