@@ -9,10 +9,24 @@ npm start   # OR yarn start
 
 [http://localhost:3000](http://localhost:3000) to view it
 
-### `npm test`
 
-### `npm run build`
+### React降低版本
 
-### `npm run eject`
+先创建react项目，然后进入项目中修改指定版本
+```sh
+$ npx create-react-app react-demo
+$ cd react-demo
+$ npm install —save react@17.0.2 react-dom@17.0.2
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- index.js
+```js
+import React from "react"
+import ReactDOM from "react-dom"
+
+import App from "./App"
+
+
+ReactDOM.render(<App />, document.getElementById("root"))
+
+```
