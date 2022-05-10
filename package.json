@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.19.5",
     "axios": "^0.26.1",
+    "dva": "^2.4.1",
     "eslint": "^8.14.0",
     "promise": "^8.1.0",
     "prop-types": "^15.8.1",
