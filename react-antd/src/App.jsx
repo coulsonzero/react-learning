@@ -1,14 +1,12 @@
 import React from "react"
-// import './App.css'
-import CreateContentDemo from './components/CreateContentDemo'
-import UseContentDemo from './components/UseContentDemo'
+// import './App.css
+import TableEditable from './components/TableEditable'
 
 class App extends React.Component {
 	render() {
 		return (
 			<>
-				<CreateContentDemo />
-				<UseContentDemo />
+				<TableEditable />
 			</>
 		)
 	}

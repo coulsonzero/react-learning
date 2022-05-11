@@ -9,6 +9,14 @@ npm start   # OR yarn start
 
 [http://localhost:3000](http://localhost:3000) to view it
 
+### package.json
+
+```json
+	"scripts": {
+		"start": "node ../node_modules/.bin/react-scripts start ./src/index.js",
+		"build": "ode ../node_modules/.bin/react-scripts build ./src/index.js"
+	},
+```
 
 ### React降低版本
 
@@ -16,7 +24,7 @@ npm start   # OR yarn start
 ```sh
 $ npx create-react-app react-demo
 $ cd react-demo
-$ npm install —save react@17.0.2 react-dom@17.0.2
+$ npm install —-save react@17.0.2 react-dom@17.0.2
 ```
 
 - index.js
