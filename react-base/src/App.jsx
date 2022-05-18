@@ -1,18 +1,15 @@
-import React, {Suspense, lazy} from "react"
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import React from 'react'
+import SetStateDemo from './components/SetStateDemo'
 
-const Home = lazy(() => import("./routes/Home"))
-const About = lazy(() => import("./routes/About"))
+class App extends React.Component {
+  render() {
+    return (
+      <>
+        <SetStateDemo />
+      </>
+    )
+  }
+}
 
-const App = () => (
-	<Router>
-		<Suspense fallback={<div>Loading...</div>}>
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-			</Routes>
-		</Suspense>
-	</Router>
-)
 
 export default App

@@ -1,12 +1,9 @@
-/**
- * 父传子：通过props向子组件传递对象
- */
-import React, {Component} from "react"
+import React from "react"
 
 function ChildFuncObejct(props) {
-	const dict = props.data.map((expense) => {
+	const dict = props.data.map((expense, index) => {
 		return (
-			<div className="expense">
+			<div className="expense" key={index}>
 				<div className="expense__title">name: {expense.name}</div>
 				<div className="expense__price">price: ${expense.price}</div>
 			</div>
@@ -20,33 +17,35 @@ function ChildFuncObejct(props) {
 	)
 }
 
-class ChildClassObject extends Component {
+class ChildClassObject extends React.Component {
 	constructor(props) {
 		super(props)
-		this.dict = this.props.data.map((expense) => {
-			return (
-				<div className="expense">
-					<div className="expense__title">name: {expense.name}</div>
-					<div className="expense__price">price: ${expense.price}</div>
-					<button>删除</button>
-				</div>
-			)
-		})
+		this.state = {
+			dict: this.props.data.map((expense, index) => {
+				return (
+					<div className="expense" key={index} style={{display: "flex", gap: "10px"}}>
+						<div className="expense__title">name: {expense.name}</div>
+						<div className="expense__price">price: ${expense.price}</div>
+						{/* <button>删除</button> */}
+					</div>
+				)
+			})
+		}
 	}
 
 	render() {
-		return <div className="expense__constainer">{this.dict}</div>
+		return <div className="expense__constainer">{this.state.dict}</div>
 	}
 }
 
-export class PropsObject extends Component {
+export class PropsObject extends React.Component {
 	state = {
 		links: ["Home", "About", "Docs"],
 		data: [
 			{name: "Amazon", price: "-$5K"},
 			{name: "Spotify", price: "-$50"},
-			{name: "Netflix", price: "-$200"},
-		],
+			{name: "Netflix", price: "-$200"}
+		]
 	}
 	render() {
 		return (

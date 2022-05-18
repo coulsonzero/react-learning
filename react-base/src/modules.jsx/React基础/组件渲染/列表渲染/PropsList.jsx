@@ -26,7 +26,7 @@ class ChildClassList extends Component {
 	}
 }
 
-export class PropsList extends Component {
+class PropsList extends Component {
 	state = {
 		links: ["Home", "About", "Docs"],
 	}
