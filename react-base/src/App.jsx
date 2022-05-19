@@ -1,11 +1,11 @@
 import React from 'react'
-import SetState3 from './modules/React基础/setState同步异步控制/SetState3'
+import UseEffectDemo from './components/UseEffectDemo'
 
 class App extends React.Component {
   render() {
     return (
       <>
-        <SetState3 />
+        <UseEffectDemo />
       </>
     )
   }
